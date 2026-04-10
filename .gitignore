@@ -1,0 +1,75 @@
+# ═══════════════════════════════════════════════
+#  .gitignore — AOD-Net Project
+# ═══════════════════════════════════════════════
+
+# ── Model Weights & Checkpoints ───────────────
+# YOLO checkpoints (lớn — không commit)
+weights/*.pt
+weights/*.pth
+# AOD_pono_best.pkl (25 KB — đã commit, không ignore)
+!weights/AOD_pono_best.pkl
+*.onnx
+*.caffemodel
+*.h5
+*.bin
+*.safetensors
+AOD_Net.caffemodel
+
+# ── Datasets & Large Data ─────────────────────
+target_test/
+target_test.zip
+data/img/
+data/result/
+*.zip
+*.tar.gz
+*.tar
+
+# ── Output Directories ────────────────────────
+dehazed_output/
+predicts/
+results/
+runs/
+samples/
+
+# ── Python Environment ────────────────────────
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Jupyter ───────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Logs & TensorBoard ────────────────────────
+logs/
+*.log
+events.out.tfevents.*
+
+# ── OS ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Temp ──────────────────────────────────────
+tmp/
+temp/
+DeployT.prototxt
+deployT.prototxt
+demo_labels/
+demo_predicts/
+
+# ── PONO model zip ────────────────────────────
+AOD-Net with PONO/ponomodels.zip
